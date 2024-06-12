@@ -1,0 +1,67 @@
+body{
+
+background-color: black;
+
+}
+
+.container{
+
+    margin-top: 50px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 50px;
+    background-color: aliceblue;
+
+}
+
+
+.campo-digitacao {
+    font-size: 20px;
+    height: 130px;
+    border: 3px solid black;
+    border-radius: 12px;
+}
+
+.frase {
+    font-size: 20px;
+    text-align: left;
+}
+
+.campo-desativado {
+    background-color: lightgray;
+}
+
+.icones {
+    vertical-align: middle;
+}
+
+
+.borda-verde {
+    border: 3px solid green;
+}
+
+.borda-vermelha {
+    border: 3px solid red;
+}
+
+.Alura-Typer-Titulo{
+
+    color: white;
+    background-color: rgb(21, 0, 139);
+    padding: 30px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.placar{
+
+    color: white;
+    background-color: rgb(21, 0, 139);
+    padding: 30px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

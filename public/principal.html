@@ -2,16 +2,26 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Alura Typer</title>
+    <title>Speed Type</title>
     <link rel="stylesheet" href="css/libs/materialize.min.css">
     <link rel="stylesheet" href="css/libs/google-fonts.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <div class="container">
-        <h1 class="center Alura-Typer-Titulo">Alura Typer</h1>
-        <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h1 class="center Typer-Titulo" ><i class="bi bi-keyboard-fill"></i> Speed Type  <i class="bi bi-keyboard-fill" ></i></h1>
+        <div class="center secao-dificuldade">
+            <h2 class="titulo-dificuldade"> Selecione a dificuldade </h2>
+            <input type="button" value="Fácil" class="btn-dificuldade facil" id="btn-dificuldadeFacil">
+            <input type="button" value="Médio" class="btn-dificuldade medio" id="btn-dificuldadeMedia">
+            <input type="button" value="Difícil" class="btn-dificuldade dificil" id="btn-dificuldadeDificil">
 
+        </div>
+        
+        <h2 class="center titulo-teste-digitacao">Teste sua digitação</h2>
+        <p class="center descricao-jogo">Teste sua digitação e descubra quantas palavras você consegue digitar em menos tempo.</p>
+        <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    
         <ul class="informacoes center">
             <li>
                 <i class="small material-icons icones">description</i>
@@ -19,7 +29,7 @@
             </li>
             <li>
                 <i class="small material-icons icones">query_builder</i>
-                <span id="tempo-digitacao">10</span> segundos
+                <span id="tempo-digitacao">0</span> segundos
             </li>
         </ul>
 
@@ -37,12 +47,12 @@
         </ul>
 
         <section class="placar">
-            <h3 class="center">Placar</h3>
+            <h3 class="center"><i class="bi bi-clipboard-data-fill"></i> Placar</h3>
             <table class="centered bordered">
                 <thead>
                     <tr>
-                        <th>Nome</th>
-                        <th>No. de palavras</th>
+                        <th> <i class="bi bi-person-circle"></i> Nome</th>
+                        <th>Pontuação</th>
                         <th>Remover</th>
                     </tr>
                 </thead>

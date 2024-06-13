@@ -1,6 +1,9 @@
+
+
+
 function inserePlacar() {
     var corpoTabela = $(".placar").find("tbody");
-    var usuario = "Douglas"
+    var usuario = ObterNomeUsuario();
     var numPalavras = $("#contador-palavras").text();
 
     var linha = novaLinha(usuario, numPalavras);
@@ -12,7 +15,19 @@ function inserePlacar() {
 function novaLinha(usuario, palavras) {
     var linha = $("<tr>");
     var colunaUsuario = $("<td>").text(usuario);
-    var colunaPalavras = $("<td>").text(palavras);
+
+
+    if(dificuldades.facil.ativo)    
+    {
+        pontuacao = parseInt(palavras) * dificuldades.facil.multiplicador;
+    } else if(dificuldades.medio.ativo){
+        pontuacao = parseInt(palavras) * dificuldades.medio.multiplicador;
+    }
+    else if(dificuldades.dificil.ativo){
+        pontuacao = parseInt(palavras) * dificuldades.dificil.multiplicador;
+    }
+
+    var colunaPalavras = $("<td>").text(pontuacao);
     var colunaRemover = $("<td>");
 
     var link = $("<a>").addClass("botao-remover").attr("href", "#");
@@ -32,4 +47,23 @@ function novaLinha(usuario, palavras) {
 function removeLinha() {
     event.preventDefault();
     $(this).parent().parent().remove();
+}
+
+function ObterNomeUsuario(){
+
+    var nome = null;
+
+    while(!nome){
+        
+        var nome = prompt("Insira seu nome para salver seu recorde: ");
+
+        if(!nome){
+
+            alert("Nome inválido, insira um nome válido");
+
+        }
+    }
+
+    return nome;
+
 }

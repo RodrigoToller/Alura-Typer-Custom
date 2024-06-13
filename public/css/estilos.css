@@ -1,8 +1,16 @@
+@import url('../packs/node_modules/bootstrap-icons/font/bootstrap-icons.css');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
 
 background-color: black;
+font-family: 'Prompt', sans-serif;
+
 
 }
+
+
+
 
 .container{
 
@@ -23,10 +31,26 @@ background-color: black;
 }
 
 .frase {
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: left;
-}
+    font-weight: bold;
 
+    border: solid 2px rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+.frase-evidencia{
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+    color: rgb(32, 0, 177);
+    border: solid 2px rgb(32, 0, 177);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgb(32, 0, 177);
+}
 .campo-desativado {
     background-color: lightgray;
 }
@@ -44,7 +68,16 @@ background-color: black;
     border: 3px solid red;
 }
 
-.Alura-Typer-Titulo{
+.secao-dificuldade{
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.Typer-Titulo{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     color: white;
     background-color: rgb(21, 0, 139);
@@ -54,7 +87,25 @@ background-color: black;
     text-transform: uppercase;
     font-weight: bold;
 }
+.titulo-dificuldade{
 
+    color: rgb(21, 0, 139);
+    text-transform: uppercase;
+    font-weight: bold;
+
+
+
+
+}
+.descricao-jogo{
+
+    color: rgb(21, 0, 139);
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
 .placar{
 
     color: white;
@@ -64,4 +115,70 @@ background-color: black;
     border-radius: 10px;
     text-transform: uppercase;
     font-weight: bold;
+
+
+
+}
+
+
+
+
+
+.titulo-teste-digitacao{
+
+    color: white;
+    background-color: rgb(21, 0, 139);
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.0rem;
+    border-radius: 20px;
+
+
+
+}
+
+.btn-dificuldade{
+
+    font-size: 1rem;
+    color: black;
+    background-color: transparent;
+    padding: 15px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.facil:hover{
+    font-size: 1.2rem;
+    border: solid 2px rgb(28, 247, 47);
+    color: rgb(28, 247, 47);
+}
+.medio:hover{
+    font-size: 1.2rem;
+    border: solid 2px rgb(250, 176, 39);
+    color: rgb(250, 176, 39);
+}
+.dificil:hover{
+    font-size: 1.2rem;
+    border: solid 2px rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+}
+
+.facil-ativo{
+    font-size: 1.2rem;
+    border: solid 2px rgb(28, 247, 47);
+    color: rgb(28, 247, 47);
+}
+.medio-ativo{
+    font-size: 1.2rem;
+    border: solid 2px rgb(250, 176, 39);
+    color: rgb(250, 176, 39);
+}
+.dificil-ativo{
+    font-size: 1.2rem;
+    border: solid 2px rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
 }
